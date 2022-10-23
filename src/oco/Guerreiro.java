@@ -20,11 +20,16 @@ public class Guerreiro {
     void setVidas(){
     Random gerador = new Random(); 
     vida = gerador.nextInt(4)+9;
-    System.out.println("Número gerado: " + vida);     
+    System.out.println(vida + " de vida");     
   }
     
     void setNome(){
        System.out.println("Digite o nome do Guerreiro: ");
        nome = input.nextLine();
+    }
+    
+    void guerreirodialog(){
+        System.out.println(nome + " Fala: ");
+        System.out.println("Meu palpite e: ");
     }
 }
